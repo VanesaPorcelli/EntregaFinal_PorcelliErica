@@ -1,0 +1,70 @@
+/* PAGINA PRODUCTOS*/
+
+.productos {
+    text-align: center;
+
+    .pro-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .pro {
+            width: 10%;
+            min-width: 250px;
+            padding: 10px 12px;
+            border: 1px solid $color-primary;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+            margin: 15px 0;
+            transition: 0.2s ease;
+            position: relative;
+
+            &:hover {
+                box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
+                @include tamanio(30vh, 100%);
+                border-radius: 20px;
+            }
+
+            .des {
+                text-align: start;
+                padding: 10px 0;
+
+                span {
+                    color: #606063;
+                    font-size: 16px;
+                }
+
+                i {
+                    font-size: 12px;
+                    color: #f3b519;
+                }
+
+                h3 {
+                    padding-top: 7px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $color_price;
+                }
+            }
+
+            .cart {
+                @include tamanio(40px,40px);
+                line-height: 40px;
+                border-radius: 50px;
+                background-color: $color-background-btn;
+                font-weight: 500;
+                color: $color_price;
+                border: 1px solid $color-background-btn;
+                position: absolute;
+                bottom: 20px;
+                right: 10px;
+            }
+        }
+    }
+}
