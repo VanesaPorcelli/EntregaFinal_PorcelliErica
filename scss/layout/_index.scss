@@ -1,12 +1,9 @@
 /* INDEX*/
 .hero {
     background-image: url("../assets/hero.avif");
-    object-fit: cover;
     display: flex;
     align-items: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend %imagen-fondo;
     background-attachment:fixed;
     @include tamanio(86vh, 100%);
     padding-right: 0px;
@@ -63,6 +60,7 @@
     }
 
 }
+
 /* KEYFRAMES*/
 @keyframes titulo {
     0% {

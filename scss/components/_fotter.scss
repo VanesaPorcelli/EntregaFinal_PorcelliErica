@@ -2,10 +2,8 @@
 
 .pie-pagina {
     background-image: url(../assets/fondo_prueba14.avif);
-    object-fit: cover;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend %imagen-fondo;
+    background-attachment:scroll;
     width: 100%;
     padding-right: 0px;
     .grupo-1 {

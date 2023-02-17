@@ -1,10 +1,7 @@
 /* MAIN DE PAG*/
 .pages__fondo {
     background-image: url(../assets/hero2.avif);
-    object-fit: cover;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend %imagen-fondo;
     background-attachment: fixed;
     @include tamanio(45vh,100%);
 }
