@@ -83,6 +83,7 @@ a {
 
 .fondo-fijo {
   background-image: url(../assets/bgfixed.avif);
+  background-attachment: fixed;
   height: 20vh;
   width: 100%; }
 

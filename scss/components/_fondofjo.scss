@@ -1,6 +1,9 @@
 //FONDO-FIJO //
 .fondo-fijo {
     background-image: url(../assets/bgfixed.avif);
+    background-attachment: fixed;
     @extend %imagen-fondo;
     @include tamanio(20vh,100%);
 }
+
+
