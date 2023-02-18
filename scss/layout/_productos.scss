@@ -27,8 +27,8 @@
             }
 
             img {
-                @include tamanio(30vh, 100%);
-                border-radius: 20px;
+                @include tamanio (60%,100%);
+                border-radius: 10px;
             }
 
             .des {
